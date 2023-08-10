@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explore Books</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		.card-img-top {
+			height: 250px;
+			object-fit: cover;
+		}
+		.summary-arrow {
+			margin-left: 5px;
+			font-size: 0.8em;
+			display: inline-block;
+			transition: transform 0.2s ease-in-out;
+		}
+		.summary-arrow.collapsed {
+			transform: rotate(-90deg);
+		}
+        .summary-text {
+            margin-left: 5px;
+            font-size: 0.8em;
+            display: inline-block;
+        }
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Book Library</a>
+        <a href="personal.html"><button id="person-prof">Profile</button></a>
+            
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search by genre" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="searchButton">Search</button>
+                </form>
+            </li>
+            
+        </ul>
+    </nav>
+    
+
+	<div class="container-fluid my-3">
+		<h2 class="text-center" id="explore-title">Explore Books</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="genre-preference" name="genre-preference">
+            <label class="form-check-label" for="genre-preference">
+              Display books based on genre preference
+            </label>
+          </div>
+          
+       
+       
+        <hr>
+        <div class="row">
+            
+            
+        <div class="col-md-3 col-lg-2 mb-3">
+            <div class="card fiction">
+                <img class="card-img-top" src="book1.jpeg" alt="Book Image">
+                <div class="card-body">
+                    <h5 class="card-title">The Great Gatsby</h5>
+                    <p class="card-text">Fiction</p>
+                    <a class="summary-link" href="#book1Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book1Summary">
+                        
+                        <span class="summary-text">Summary</span>
+                    </a>
+                    <div class="collapse" id="book1Summary">
+                        <div class="card-body">
+                            <div class="summary-content" style="height: 100px; overflow-y: scroll;">
+                              
+                        <p>The Great Gatsby portrays the decadence and excess of the Roaring Twenties through the story of Jay Gatsby, a wealthy and enigmatic millionaire who is obsessed with the love of his life.</p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3 col-lg-2 mb-3">
+            <div class="card fiction">
+                <img class="card-img-top" src="book2.jpeg" alt="Book Image">
+                <div class="card-body">
+                    <h5 class="card-title">Invisible Man</h5>
+                    <p class="card-text">Fiction</p>
+                    <a class="summary-link" href="#book2Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book2Summary">
+                        
+                        <span class="summary-text">Summary</span>
+                    </a>
+                    <div class="collapse" id="book2Summary">
+                        <p>Science fiction novel by H.G. Wells that tells the story of a scientist who discovers the secret of invisibility, but is driven mad by the consequences of his discovery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 mb-3">
+            <div class="card fiction">
+                <img class="card-img-top" src="book3.jpeg" alt="Book Image">
+                <div class="card-body">
+                    <h5 class="card-title">The Trial</h5>
+                    <p class="card-text">Fiction</p>
+                    <a class="summary-link" href="#book3Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book3Summary">
+                        
+                        <span class="summary-text">Summary</span>
+                    </a>
+                    <div class="collapse" id="book3Summary">
+                        <p>Novel by Franz Kafka that tells the story of a man named Josef K. who is arrested and put on trial for a crime that is never revealed.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3 col-lg-2 mb-3">
+                <div class="card fiction">
+                    <img class="card-img-top" src="book4.jpeg" alt="Book Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Middlemarch</h5>
+                        <p class="card-text">Fiction</p>
+                        <a class="summary-link" href="#book4Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book4Summary">
+                            
+                            <span class="summary-text">Summary</span>
+                        </a>
+                        <div class="collapse" id="book4Summary">
+                            <p>"Middlemarch" is a novel by George Eliot that portrays the lives and loves of the inhabitants of the fictitious English town of Middlemarch.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3 col-lg-2 mb-3">
+                    <div class="card fiction">
+                        <img class="card-img-top" src="book5.jpeg" alt="Book Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Beloved</h5>
+                            <p class="card-text">Fiction</p>
+                            <a class="summary-link" href="#book5Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book5Summary">
+                                
+                                <span class="summary-text">Summary</span>
+                            </a>
+                            <div class="collapse" id="book5Summary">
+                                <p>Novel by Toni Morrison that tells the story of a former slave named Sethe who is haunted by the memory of her dead daughter</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 mb-3">
+                        <div class="card fiction">
+                            <img class="card-img-top" src="book6.jpeg" alt="Book Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Gulliver's Travels</h5>
+                                <p class="card-text">Fiction</p>
+                                <a class="summary-link" href="#book6Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book6Summary">
+                                    
+                                    <span class="summary-text">Summary</span>
+                                </a>
+                                <div class="collapse" id="book6Summary">
+                                    <p>Novel by Jonathan Swift that follows the adventures of a sailor named Lemuel Gulliver as he visits various imaginary lands with inhabitants of different sizes and characteristics</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3 col-lg-2 mb-3">
+                            <div class="card classic">
+                                <img class="card-img-top" src="book7.jpeg" alt="Book Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Stranger</h5>
+                                    <p class="card-text">Classic</p>
+                                    <a class="summary-link" href="#book7Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book7Summary">
+                                        
+                                        <span class="summary-text">Summary</span>
+                                    </a>
+                                    <div class="collapse" id="book7Summary">
+                                        <p>Novel by Albert Camus that tells the story of a man named Meursault who kills an Arab man in Algiers and is put on trial for murder.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 mb-3">
+                                <div class="card classic">
+                                    <img class="card-img-top" src="book8.webp" alt="Book Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jane Eyre</h5>
+                                        <p class="card-text">Classic</p>
+                                        <a class="summary-link" href="#book8Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book8Summary">
+                                            
+                                            <span class="summary-text">Summary</span>
+                                        </a>
+                                        <div class="collapse" id="book8Summary">
+                                            <p>Novel by Charlotte Bronte that tells the story of a young orphan girl named Jane who becomes a governess at Thornfield Hall and falls in love with her employer, Mr. Rochester.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-md-3 col-lg-2 mb-3">
+                                    <div class="card classic">
+                                        <img class="card-img-top" src="book9.jpeg" alt="Book Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Aeneid</h5>
+                                            <p class="card-text">Classic</p>
+                                            <a class="summary-link" href="#book9Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book9Summary">
+                                                
+                                                <span class="summary-text">Summary</span>
+                                            </a>
+                                            <div class="collapse" id="book9Summary">
+                                                <p>It is an epic poem by the Roman poet Virgil that tells the story of the Trojan hero Aeneas and his journey to Italy, where he establishes the city of Rome.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-3 col-lg-2 mb-3">
+                                        <div class="card classic">
+                                            <img class="card-img-top" src="book10.jpeg" alt="Book Image">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Collected Fiction</h5>
+                                                <p class="card-text">Classic</p>
+                                                <a class="summary-link" href="#book10Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book10Summary">
+                                                    
+                                                    <span class="summary-text">Summary</span>
+                                                </a>
+                                                <div class="collapse" id="book10Summary">
+                                                    <p>"Collected Fiction" is a book that includes a collection of various works of fiction by a particular author or multiple authors.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-3 col-lg-2 mb-3">
+                                            <div class="card classic">
+                                                <img class="card-img-top" src="book11.jpeg" alt="Book Image">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">David Copperfield</h5>
+                                                    <p class="card-text">Classic</p>
+                                                    <a class="summary-link" href="#book11Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book11Summary">
+                                                        
+                                                        <span class="summary-text">Summary</span>
+                                                    </a>
+                                                    <div class="collapse" id="book11Summary">
+                                                        <p>Novel by Charles Dickens that tells the story of a young man named David who overcomes poverty and adversity to become a successful writer and find happiness in love.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-2 mb-3">
+                                                <div class="card classic">
+                                                    <img class="card-img-top" src="book14.jpeg" alt="Book Image">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Les Misérables</h5>
+                                                        <p class="card-text">Classic</p>
+                                                        <a class="summary-link" href="#book14Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book14Summary">
+                                                            
+                                                            <span class="summary-text">Summary</span>
+                                                        </a>
+                                                        <div class="collapse" id="book14Summary">
+                                                            <p>Novel by Victor Hugo that tells the story of ex-convict Jean Valjean and his quest for redemption in 19th century France.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            
+                                                
+                                                    
+                                                        <div class="col-md-3 col-lg-2 mb-3">
+                                                            <div class="card comedy">
+                                                                <img class="card-img-top" src="book15.jpeg" alt="Book Image">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Emma</h5>
+                                                                    <p class="card-text">Comedy</p>
+                                                                    <a class="summary-link" href="#book15Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book15Summary">
+                                                                        
+                                                                        <span class="summary-text">Summary</span>
+                                                                    </a>
+                                                                    <div class="collapse" id="book15Summary">
+                                                                        <p>"Emma" is a novel by Jane Austen that tells the story of Emma Woodhouse, a young woman who takes it upon herself to play matchmaker for her friends and acquaintances in Regency England.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-lg-2 mb-3">
+                                                                <div class="card comedy">
+                                                                    <img class="card-img-top" src="book12.jpeg" alt="Book Image">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Candide</h5>
+                                                                        <p class="card-text">Comedy</p>
+                                                                        <a class="summary-link" href="#book12Summary" data-toggle="collapse" aria-expanded="false" aria-controls="book12Summary">
+                                                                            
+                                                                            <span class="summary-text">Summary</span>
+                                                                        </a>
+                                                                        <div class="collapse" id="book12Summary">
+                                                                            <p>A satirical novel by Voltaire that follows the travels of a young man named Candide and his misadventures in a world filled with cruelty, corruption, and injustice.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+    </div>
+    </div>
+        
+	</div>
+
+	
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="explore.js"></script>
+</body>
+</html>
